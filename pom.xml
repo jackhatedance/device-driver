@@ -25,5 +25,7 @@
 
 	<modules>
 		<module>RF-IR-Transmitter</module>
-			</modules>
+		<module>HuaWei-STB-for-ChinaTelecom</module>
+		
+	</modules>
 </project>
