@@ -1,7 +1,7 @@
 package com._7eggs.arduino.tranmitter;
 
-
 import com.deviceyun.smarthome.api.device.AbstractDevice;
+import com.deviceyun.smarthome.api.device.Api;
 import com.deviceyun.smarthome.api.device.transmitter.IrTransmitter;
 import com.deviceyun.smarthome.api.device.transmitter.Rf315Transmitter;
 import com.deviceyun.smarthome.api.device.transmitter.Rf433Transmitter;
@@ -26,6 +26,17 @@ public class IrRfTransmitter extends AbstractDevice implements
 		System.out.println(String.format("transmit IR: %s,%d,%d", command,
 				code, bits));
 
+	}
+
+	@Override
+	public Api getApi() {
+		return new Api("7eggs", "transmitter", "IrRfTransmitter");
+	}
+
+	@Override
+	public String getApiVersion() {
+
+		return "1.0";
 	}
 
 }
