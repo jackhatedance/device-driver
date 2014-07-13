@@ -1,9 +1,9 @@
 package com._7eggs.devicedriver.huaweistb;
 
-import com.deviceyun.smarthome.api.device.AbstractDevice;
-import com.deviceyun.smarthome.api.device.Api;
-import com.deviceyun.smarthome.api.device.transmitter.IrTransmitter;
-import com.deviceyun.smarthome.api.device.tv.TV;
+import com.deviceyun.yunos.api.device.AbstractDevice;
+import com.deviceyun.yunos.api.device.DeviceApi;
+import com.deviceyun.yunos.api.device.transmitter.IrTransmitter;
+import com.deviceyun.yunos.api.device.tv.TV;
 
 public class ChinaTelecomSTB extends AbstractDevice implements TV {
 	private IrTransmitter controller;
@@ -20,7 +20,7 @@ public class ChinaTelecomSTB extends AbstractDevice implements TV {
 	}
 
 	@Override
-	public Api getApi() {
+	public DeviceApi getApi() {
 
 		return null;
 	}

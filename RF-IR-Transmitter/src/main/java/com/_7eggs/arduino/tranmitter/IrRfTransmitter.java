@@ -1,11 +1,11 @@
 package com._7eggs.arduino.tranmitter;
 
-import com.deviceyun.smarthome.api.device.AbstractDevice;
-import com.deviceyun.smarthome.api.device.Api;
-import com.deviceyun.smarthome.api.device.transmitter.IrTransmitter;
-import com.deviceyun.smarthome.api.device.transmitter.Rf315Transmitter;
-import com.deviceyun.smarthome.api.device.transmitter.Rf433Transmitter;
-import com.deviceyun.smarthome.device.HttpClient;
+import com.deviceyun.yunos.api.device.AbstractDevice;
+import com.deviceyun.yunos.api.device.DeviceApi;
+import com.deviceyun.yunos.api.device.transmitter.IrTransmitter;
+import com.deviceyun.yunos.api.device.transmitter.Rf315Transmitter;
+import com.deviceyun.yunos.api.device.transmitter.Rf433Transmitter;
+import com.deviceyun.yunos.device.HttpClient;
 
 public class IrRfTransmitter extends AbstractDevice implements
 		Rf433Transmitter, Rf315Transmitter, IrTransmitter {
@@ -29,8 +29,8 @@ public class IrRfTransmitter extends AbstractDevice implements
 	}
 
 	@Override
-	public Api getApi() {
-		return new Api("7eggs", "transmitter", "IrRfTransmitter");
+	public DeviceApi getApi() {
+		return new DeviceApi("7eggs", "transmitter", "IrRfTransmitter");
 	}
 
 	@Override
