@@ -1,21 +1,21 @@
-package com._7eggs.arduino.tranmitter;
+package com._7eggs.devicedriver.huaweistb;
 
 import com.deviceyun.yunos.api.device.DeviceInfo;
 import com.deviceyun.yunos.api.device.FunctionalDevice;
 import com.deviceyun.yunos.api.device.Model;
 import com.deviceyun.yunos.api.driver.AbstractDriver;
 
-public class IrRfTransmitterDriver extends AbstractDriver {
+public class ChinaTelecomSTBDriver extends AbstractDriver {
 
-	public IrRfTransmitterDriver() {
-		Model m = new Model("7eggs", "Multifunction Transmitter", "IR-RF433");
+	public ChinaTelecomSTBDriver() {
+		Model m = new Model("Huawei", "Set Top Box", "EC1308");
 		supportedModels.add(m);
 
 	}
 
 	@Override
 	public FunctionalDevice createDevice(DeviceInfo info) {
-		IrRfTransmitter dev = new IrRfTransmitter();
+		ChinaTelecomSTB dev = new ChinaTelecomSTB();
 		return dev;
 	}
 
@@ -28,7 +28,7 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 	@Override
 	public String getDriverId() {
 
-		return "arduino rf&ir tranmitter driver";
+		return "Huawei-STB-EC1308";
 	}
 
 	@Override

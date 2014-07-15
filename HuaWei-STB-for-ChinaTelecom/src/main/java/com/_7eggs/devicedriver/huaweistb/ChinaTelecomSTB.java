@@ -7,12 +7,18 @@ import com.deviceyun.yunos.api.device.tv.TV;
 
 public class ChinaTelecomSTB extends AbstractDevice implements TV {
 	private IrTransmitter controller;
+	private Configure configure;
 
 	private static long CODE_CHANNEL[] = { 0x12345, 0x123456 };
 
 	public ChinaTelecomSTB() {
-		configure.put("bits", 24);
-		configure.put("repeat", 1);
+
+		configure = new Configure();
+
+		configure.setBits(24);
+		configure.setRepeat(1);
+		configure.getControllerRef().setType(
+				"com.deviceyun.yunos.api.device.transmitter.IrTransmitter");
 	}
 
 	public void setController(IrTransmitter controller) {
@@ -32,26 +38,37 @@ public class ChinaTelecomSTB extends AbstractDevice implements TV {
 
 	@Override
 	public void on() {
-		// TODO Auto-generated method stub
+		transmit(-1);
 
 	}
 
 	@Override
 	public void off() {
-		// TODO Auto-generated method stub
+		transmit(-1);
 
 	}
 
 	@Override
 	public void setVolume(int vol) {
-		// TODO Auto-generated method stub
+		transmit(-1);
+
+	}
+
+	private void transmit(long code) {
+		controller.transmit(IrTransmitter.TYPE_NEC, code, configure.getBits(),
+				configure.getRepeat());
 
 	}
 
 	@Override
 	public void switchToChannel(int channel) {
-		controller.transmit(IrTransmitter.TYPE_NEC, CODE_CHANNEL[channel],
-				configure.getInt("bits"), configure.getInt("repeat"));
+		transmit(CODE_CHANNEL[channel]);
 
+	}
+
+	@Override
+	public Object getConfigure() {
+
+		return configure;
 	}
 }
