@@ -24,6 +24,9 @@
 
 
 	<modules>
+	    
+	    <module>Multifunction Transmitter API</module>
+	    
 		<module>RF-IR-Transmitter</module>
 		<module>HuaWei-STB-for-ChinaTelecom</module>
 		<module>Light</module>

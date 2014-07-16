@@ -5,11 +5,11 @@ import java.util.Map;
 
 import com.deviceyun.yunos.api.device.AbstractDevice;
 import com.deviceyun.yunos.api.device.DeviceApi;
-import com.deviceyun.yunos.api.device.transmitter.Rf433Transmitter;
 import com.deviceyun.yunos.device.HttpClient;
 import com.deviceyun.yunos.device.HttpClientImpl;
 
-public class IrRfTransmitter extends AbstractDevice implements Rf433Transmitter {
+public class IrRfTransmitter extends AbstractDevice implements
+		MutifunctionTransmitterV1_0 {
 
 	private DeviceApi deviceApi;
 	private String version;
@@ -36,20 +36,6 @@ public class IrRfTransmitter extends AbstractDevice implements Rf433Transmitter 
 	}
 
 	@Override
-	public void transmit(int pulseLength, long code, int bits) {
-		System.out.println(String.format("transmit RF433: %d,%d,%d",
-				pulseLength, code, bits));
-
-		Map<String, String> map = new HashMap<String, String>();
-
-		map.put("pulseLength", String.valueOf(pulseLength));
-		map.put("code", String.valueOf(code));
-		map.put("bits", String.valueOf(bits));
-
-		httpClient.get(map);
-	}
-
-	@Override
 	public DeviceApi getApi() {
 		return deviceApi;
 	}
@@ -57,6 +43,34 @@ public class IrRfTransmitter extends AbstractDevice implements Rf433Transmitter 
 	@Override
 	public String getApiVersion() {
 		return version;
+	}
+
+	@Override
+	public void transmitIR(String type, long code, int bits, int repeat) {
+
+		Map<String, String> map = new HashMap<String, String>();
+
+		map.put("type", type);
+		map.put("code", String.valueOf(code));
+		map.put("bits", String.valueOf(bits));
+		map.put("repeat", String.valueOf(repeat));
+
+		httpClient.get(map);
+
+	}
+
+	@Override
+	public void transmitRF(int mhz, int pulseLength, long code, int bits) {
+
+		Map<String, String> map = new HashMap<String, String>();
+
+		map.put("mhz", String.valueOf(mhz));
+		map.put("pulseLength", String.valueOf(pulseLength));
+		map.put("code", String.valueOf(code));
+		map.put("bits", String.valueOf(bits));
+
+		httpClient.get(map);
+
 	}
 
 }

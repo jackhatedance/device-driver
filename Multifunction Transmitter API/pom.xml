@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.7eggs</groupId>
-	<artifactId>RF-IR-Transmitter</artifactId>
+	<artifactId>MultifunctionTransmitterAPI</artifactId>
 	<version>1.0</version>
-	<name>RF-IR-Transmitter</name>
+	<name>MultifunctionTransmitterAPI</name>
 
 	<build>
 
@@ -24,11 +24,6 @@
 			<groupId>com.deviceyun</groupId>
 			<artifactId>api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.7eggs</groupId>
-			<artifactId>MultifunctionTransmitterAPI</artifactId>
-			<version>1.0</version>
 		</dependency>
 	</dependencies>
 </project>
