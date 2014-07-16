@@ -18,7 +18,8 @@ public class IrRfTransmitter extends AbstractDevice implements
 	private Configure configure;
 
 	public IrRfTransmitter() {
-		deviceApi = new DeviceApi("7eggs", "transmitter", "IrRfTransmitter");
+		deviceApi = new DeviceApi("7eggs", "Transmitter",
+				"MultifunctionTransmitter");
 		version = "0.1";
 
 		configure = new Configure();
