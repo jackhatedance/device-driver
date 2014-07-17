@@ -31,6 +31,10 @@ public class IrRfTransmitter extends AbstractDevice implements
 		return configure;
 	}
 
+	public void setConfigure(Object configure) {
+		this.configure = this.configure;
+	}
+
 	public void init() {
 		httpClient = new HttpClientImpl(configure.getHost(),
 				configure.getPort());

@@ -4,6 +4,7 @@ import com.deviceyun.yunos.api.device.DeviceInfo;
 import com.deviceyun.yunos.api.device.FunctionalDevice;
 import com.deviceyun.yunos.api.device.Model;
 import com.deviceyun.yunos.api.driver.AbstractDriver;
+import com.google.gson.Gson;
 
 public class IrRfTransmitterDriver extends AbstractDriver {
 
@@ -16,6 +17,15 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 	@Override
 	public FunctionalDevice createDevice(DeviceInfo info) {
 		IrRfTransmitter dev = new IrRfTransmitter();
+
+		Gson gson = new Gson();
+		Configure conf = gson.fromJson(info.getConfigure().toString(),
+				Configure.class);
+
+		dev.setConfigure(conf);
+
+		dev.init();
+
 		return dev;
 	}
 
