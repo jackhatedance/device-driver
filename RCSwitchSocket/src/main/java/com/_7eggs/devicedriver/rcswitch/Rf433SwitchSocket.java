@@ -1,9 +1,9 @@
 package com._7eggs.devicedriver.rcswitch;
 
-import com.deviceyun.yunos.api.device.AbstractDevice;
-import com.deviceyun.yunos.api.device.DeviceApi;
-import com.deviceyun.yunos.api.device._switch.ElectricitySwitch;
-import com.deviceyun.yunos.api.device.transmitter.Rf433Transmitter;
+import com.deviceyun.yunos.device.AbstractDevice;
+import com.deviceyun.yunos.device.DeviceApi;
+import com.deviceyun.yunos.deviceApi._switch.ElectricitySwitch;
+import com.deviceyun.yunos.deviceApi.transmitter.Rf433Transmitter;
 
 public class Rf433SwitchSocket extends AbstractDevice implements
 		ElectricitySwitch {
@@ -47,4 +47,9 @@ public class Rf433SwitchSocket extends AbstractDevice implements
 		return null;
 	}
 
+	@Override
+	public void setConfigure(Object configure) {
+		// TODO Auto-generated method stub
+
+	}
 }

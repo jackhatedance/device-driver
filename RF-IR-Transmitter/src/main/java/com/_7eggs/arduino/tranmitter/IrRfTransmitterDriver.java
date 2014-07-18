@@ -1,9 +1,9 @@
 package com._7eggs.arduino.tranmitter;
 
-import com.deviceyun.yunos.api.device.DeviceInfo;
-import com.deviceyun.yunos.api.device.FunctionalDevice;
-import com.deviceyun.yunos.api.device.Model;
-import com.deviceyun.yunos.api.driver.AbstractDriver;
+import com.deviceyun.yunos.device.DeviceInfo;
+import com.deviceyun.yunos.device.FunctionalDevice;
+import com.deviceyun.yunos.device.Model;
+import com.deviceyun.yunos.driver.AbstractDriver;
 import com.google.gson.Gson;
 
 public class IrRfTransmitterDriver extends AbstractDriver {

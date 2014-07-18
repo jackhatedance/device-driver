@@ -1,9 +1,9 @@
 package com._7eggs.devicedriver.huaweistb;
 
-import com.deviceyun.yunos.api.device.AbstractDevice;
-import com.deviceyun.yunos.api.device.DeviceApi;
-import com.deviceyun.yunos.api.device.transmitter.IrTransmitter;
-import com.deviceyun.yunos.api.device.tv.TV;
+import com.deviceyun.yunos.device.AbstractDevice;
+import com.deviceyun.yunos.device.DeviceApi;
+import com.deviceyun.yunos.deviceApi.transmitter.IrTransmitter;
+import com.deviceyun.yunos.deviceApi.tv.TV;
 
 public class ChinaTelecomSTB extends AbstractDevice implements TV {
 	private IrTransmitter controller;
@@ -70,5 +70,11 @@ public class ChinaTelecomSTB extends AbstractDevice implements TV {
 	public Object getConfigure() {
 
 		return configure;
+	}
+	
+	@Override
+	public void setConfigure(Object arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 }

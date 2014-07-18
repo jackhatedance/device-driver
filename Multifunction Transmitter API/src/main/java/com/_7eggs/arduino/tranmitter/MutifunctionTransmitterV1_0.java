@@ -1,6 +1,6 @@
 package com._7eggs.arduino.tranmitter;
 
-import com.deviceyun.yunos.api.device.FunctionalDevice;
+import com.deviceyun.yunos.device.FunctionalDevice;
 
 public interface MutifunctionTransmitterV1_0 extends FunctionalDevice {
 

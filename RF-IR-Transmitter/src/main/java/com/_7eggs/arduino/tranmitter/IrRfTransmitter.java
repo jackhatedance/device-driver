@@ -3,10 +3,10 @@ package com._7eggs.arduino.tranmitter;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.deviceyun.yunos.api.device.AbstractDevice;
-import com.deviceyun.yunos.api.device.DeviceApi;
-import com.deviceyun.yunos.device.HttpClient;
-import com.deviceyun.yunos.device.HttpClientImpl;
+import com.deviceyun.yunos.device.AbstractDevice;
+import com.deviceyun.yunos.device.DeviceApi;
+import com.deviceyun.yunos.device.utils.HttpClient;
+import com.deviceyun.yunos.device.utils.HttpClientImpl;
 
 public class IrRfTransmitter extends AbstractDevice implements
 		MutifunctionTransmitterV1_0 {
