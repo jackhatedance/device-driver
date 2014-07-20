@@ -23,6 +23,8 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 				Configure.class);
 
 		dev.setConfigure(conf);
+		
+		System.out.println("host:"+conf.getHost());
 
 		dev.init();
 

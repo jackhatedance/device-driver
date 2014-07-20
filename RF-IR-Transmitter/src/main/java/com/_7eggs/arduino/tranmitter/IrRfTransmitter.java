@@ -27,17 +27,18 @@ public class IrRfTransmitter extends AbstractDevice implements
 
 	@Override
 	public Object getConfigure() {
-
 		return configure;
 	}
 
 	public void setConfigure(Object configure) {
-		this.configure = this.configure;
+		this.configure = (Configure)configure;
 	}
 
 	public void init() {
 		httpClient = new HttpClientImpl(configure.getHost(),
 				configure.getPort());
+		
+		
 	}
 
 	@Override
