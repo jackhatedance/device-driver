@@ -1,12 +1,12 @@
 package com._7eggs.devicedriver.huaweistb;
 
-import com.deviceyun.yunos.device.AbstractDevice;
+import com.deviceyun.yunos.device.AbstractPhysicalDevice;
 import com.deviceyun.yunos.device.DeviceApi;
-import com.deviceyun.yunos.deviceApi.transmitter.IrTransmitter;
+import com.deviceyun.yunos.deviceApi.transmitter.IrTransmitterV1_0;
 import com.deviceyun.yunos.deviceApi.tv.TV;
 
-public class ChinaTelecomSTB extends AbstractDevice implements TV {
-	private IrTransmitter controller;
+public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
+	private IrTransmitterV1_0 controller;
 	private Configure configure;
 
 	private static long CODE_CHANNEL[] = { 0x12345, 0x123456 };
@@ -21,7 +21,7 @@ public class ChinaTelecomSTB extends AbstractDevice implements TV {
 				"com.deviceyun.yunos.api.device.transmitter.IrTransmitter");
 	}
 
-	public void setController(IrTransmitter controller) {
+	public void setController(IrTransmitterV1_0 controller) {
 		this.controller = controller;
 	}
 
@@ -55,7 +55,7 @@ public class ChinaTelecomSTB extends AbstractDevice implements TV {
 	}
 
 	private void transmit(long code) {
-		controller.transmit(IrTransmitter.TYPE_NEC, code, configure.getBits(),
+		controller.transmit(IrTransmitterV1_0.TYPE_NEC, code, configure.getBits(),
 				configure.getRepeat());
 
 	}
@@ -71,10 +71,10 @@ public class ChinaTelecomSTB extends AbstractDevice implements TV {
 
 		return configure;
 	}
-	
+
 	@Override
 	public void setConfigure(Object arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

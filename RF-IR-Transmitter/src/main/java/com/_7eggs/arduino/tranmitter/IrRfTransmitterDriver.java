@@ -1,8 +1,8 @@
 package com._7eggs.arduino.tranmitter;
 
 import com.deviceyun.yunos.device.DeviceInfo;
-import com.deviceyun.yunos.device.FunctionalDevice;
 import com.deviceyun.yunos.device.Model;
+import com.deviceyun.yunos.device.PhysicalDevice;
 import com.deviceyun.yunos.driver.AbstractDriver;
 import com.google.gson.Gson;
 
@@ -15,16 +15,16 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 	}
 
 	@Override
-	public FunctionalDevice createDevice(DeviceInfo info) {
-		IrRfTransmitter dev = new IrRfTransmitter();
+	public PhysicalDevice createDevice(DeviceInfo info) {
+		IrRfTransmitterPD dev = new IrRfTransmitterPD();
 
 		Gson gson = new Gson();
 		Configure conf = gson.fromJson(info.getConfigure().toString(),
 				Configure.class);
 
 		dev.setConfigure(conf);
-		
-		System.out.println("host:"+conf.getHost());
+
+		System.out.println("host:" + conf.getHost());
 
 		dev.init();
 

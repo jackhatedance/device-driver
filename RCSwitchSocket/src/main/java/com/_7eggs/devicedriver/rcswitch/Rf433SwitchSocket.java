@@ -1,13 +1,13 @@
 package com._7eggs.devicedriver.rcswitch;
 
-import com.deviceyun.yunos.device.AbstractDevice;
+import com.deviceyun.yunos.device.AbstractPhysicalDevice;
 import com.deviceyun.yunos.device.DeviceApi;
 import com.deviceyun.yunos.deviceApi._switch.ElectricitySwitch;
-import com.deviceyun.yunos.deviceApi.transmitter.Rf433Transmitter;
+import com.deviceyun.yunos.deviceApi.transmitter.RfTransmitterV1_0;
 
-public class Rf433SwitchSocket extends AbstractDevice implements
+public class Rf433SwitchSocket extends AbstractPhysicalDevice implements
 		ElectricitySwitch {
-	private Rf433Transmitter controller;
+	private RfTransmitterV1_0 controller;
 
 	private int pulseLength = 166;
 	private long codeOn = 123;
@@ -16,16 +16,19 @@ public class Rf433SwitchSocket extends AbstractDevice implements
 
 	@Override
 	public void on() {
-		controller.transmit(pulseLength, codeOn, bits);
+
+		controller.transmit(RfTransmitterV1_0.FREQUENCY_433, pulseLength, codeOn,
+				bits);
 
 	}
 
 	@Override
 	public void off() {
-		controller.transmit(pulseLength, codeOff, bits);
+		controller.transmit(RfTransmitterV1_0.FREQUENCY_433, pulseLength, codeOff,
+				bits);
 	}
 
-	public void setController(Rf433Transmitter controller) {
+	public void setController(RfTransmitterV1_0 controller) {
 		this.controller = controller;
 	}
 

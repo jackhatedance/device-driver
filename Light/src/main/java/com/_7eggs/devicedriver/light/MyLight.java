@@ -1,11 +1,11 @@
 package com._7eggs.devicedriver.light;
 
-import com.deviceyun.yunos.device.AbstractDevice;
+import com.deviceyun.yunos.device.AbstractPhysicalDevice;
 import com.deviceyun.yunos.device.DeviceApi;
 import com.deviceyun.yunos.deviceApi._switch.ElectricitySwitch;
 import com.deviceyun.yunos.deviceApi.light.SimpleLight;
 
-public class MyLight extends AbstractDevice implements SimpleLight {
+public class MyLight extends AbstractPhysicalDevice implements SimpleLight {
 	ElectricitySwitch controller;
 
 	@Override
@@ -41,11 +41,11 @@ public class MyLight extends AbstractDevice implements SimpleLight {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 	@Override
 	public void setConfigure(Object arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
