@@ -10,7 +10,7 @@ import com.deviceyun.yunos.device.utils.HttpClientImpl;
 public class IrRfTransmitterPD extends AbstractPhysicalDevice {
 
 	private HttpClient httpClient;
-	private Configure configure;
+	private Config configure;
 
 	public IrRfTransmitterPD() {
 		// deviceApi = new DeviceApi("7eggs", "Transmitter",
@@ -25,7 +25,7 @@ public class IrRfTransmitterPD extends AbstractPhysicalDevice {
 	}
 
 	public void setConfigure(Object configure) {
-		this.configure = (Configure) configure;
+		this.configure = (Config) configure;
 	}
 
 	public void init() {

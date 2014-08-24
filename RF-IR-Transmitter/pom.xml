@@ -26,12 +26,12 @@
 			<version>2.2.4</version>
 		</dependency>
 		<dependency>
-			<groupId>com.deviceyun</groupId>
-			<artifactId>sdk</artifactId>
+			<groupId>com.deviceyun.yunos</groupId>
+			<artifactId>driver-api</artifactId>
 			<version>0.1</version>
 		</dependency>
 		<dependency>
-			<groupId>com.deviceyun</groupId>
+			<groupId>com.deviceyun.yunos</groupId>
 			<artifactId>device-api</artifactId>
 			<version>0.1</version>
 		</dependency>

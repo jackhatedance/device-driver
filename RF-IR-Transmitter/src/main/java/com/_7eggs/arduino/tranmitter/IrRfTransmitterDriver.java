@@ -1,9 +1,12 @@
 package com._7eggs.arduino.tranmitter;
 
+import java.util.List;
+
 import com.deviceyun.yunos.device.DeviceInfo;
 import com.deviceyun.yunos.device.Model;
 import com.deviceyun.yunos.device.PhysicalDevice;
 import com.deviceyun.yunos.driver.AbstractDriver;
+import com.deviceyun.yunos.driver.config.ConfigItem;
 import com.google.gson.Gson;
 
 public class IrRfTransmitterDriver extends AbstractDriver {
@@ -19,8 +22,8 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 		IrRfTransmitterPD dev = new IrRfTransmitterPD();
 
 		Gson gson = new Gson();
-		Configure conf = gson.fromJson(info.getConfigure().toString(),
-				Configure.class);
+		Config conf = gson.fromJson(info.getConfigure().toString(),
+				Config.class);
 
 		dev.setConfigure(conf);
 
@@ -37,6 +40,11 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 		return "7eggs.com";
 	}
 
+	@Override
+	public Class getConfigureClass() {		
+		return Config.class;
+	}
+	
 	@Override
 	public String getDriverId() {
 

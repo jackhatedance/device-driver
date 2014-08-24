@@ -21,8 +21,8 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>com.deviceyun</groupId>
-			<artifactId>sdk</artifactId>
+			<groupId>com.deviceyun.yunos</groupId>
+			<artifactId>driver-api</artifactId>
 			<version>0.1</version>
 		</dependency>
 	</dependencies>
