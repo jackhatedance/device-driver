@@ -1,9 +1,9 @@
 package com._7eggs.devicedriver.huaweistb;
 
-import com.deviceyun.yunos.device.DeviceInfo;
-import com.deviceyun.yunos.device.Model;
-import com.deviceyun.yunos.device.PhysicalDevice;
-import com.deviceyun.yunos.driver.AbstractDriver;
+import com.driverstack.yunos.device.DeviceInfo;
+import com.driverstack.yunos.device.Model;
+import com.driverstack.yunos.device.PhysicalDevice;
+import com.driverstack.yunos.driver.AbstractDriver;
 
 public class ChinaTelecomSTBDriver extends AbstractDriver {
 

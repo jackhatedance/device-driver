@@ -1,7 +1,7 @@
 package com._7eggs.arduino.tranmitter;
 
-import com.deviceyun.yunos.device.DeviceApi;
-import com.deviceyun.yunos.deviceApi.transmitter.RfTransmitterV1_0;
+import com.driverstack.yunos.device.DeviceApi;
+import com.driverstack.yunos.deviceApi.transmitter.RfTransmitterV1_0;
 
 public class RfTransmitterFD implements RfTransmitterV1_0 {
 

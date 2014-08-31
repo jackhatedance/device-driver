@@ -1,9 +1,9 @@
 package com._7eggs.devicedriver.light;
 
-import com.deviceyun.yunos.device.AbstractPhysicalDevice;
-import com.deviceyun.yunos.device.DeviceApi;
-import com.deviceyun.yunos.deviceApi._switch.ElectricitySwitch;
-import com.deviceyun.yunos.deviceApi.light.SimpleLight;
+import com.driverstack.yunos.device.AbstractPhysicalDevice;
+import com.driverstack.yunos.device.DeviceApi;
+import com.driverstack.yunos.deviceApi._switch.ElectricitySwitch;
+import com.driverstack.yunos.deviceApi.light.SimpleLight;
 
 public class MyLight extends AbstractPhysicalDevice implements SimpleLight {
 	ElectricitySwitch controller;

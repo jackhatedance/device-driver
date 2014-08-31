@@ -1,9 +1,9 @@
 package com._7eggs.devicedriver.huaweistb;
 
-import com.deviceyun.yunos.device.AbstractPhysicalDevice;
-import com.deviceyun.yunos.device.DeviceApi;
-import com.deviceyun.yunos.deviceApi.transmitter.IrTransmitterV1_0;
-import com.deviceyun.yunos.deviceApi.tv.TV;
+import com.driverstack.yunos.device.AbstractPhysicalDevice;
+import com.driverstack.yunos.device.DeviceApi;
+import com.driverstack.yunos.deviceApi.transmitter.IrTransmitterV1_0;
+import com.driverstack.yunos.deviceApi.tv.TV;
 
 public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 	private IrTransmitterV1_0 controller;
@@ -18,7 +18,7 @@ public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 		configure.setBits(24);
 		configure.setRepeat(1);
 		configure.getControllerRef().setType(
-				"com.deviceyun.yunos.api.device.transmitter.IrTransmitter");
+				"com.driverstack.yunos.api.device.transmitter.IrTransmitter");
 	}
 
 	public void setController(IrTransmitterV1_0 controller) {

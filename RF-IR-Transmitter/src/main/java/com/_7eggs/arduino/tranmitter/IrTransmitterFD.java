@@ -1,9 +1,9 @@
 package com._7eggs.arduino.tranmitter;
 
-import com.deviceyun.yunos.device.DeviceApi;
+import com.driverstack.yunos.device.DeviceApi;
 
 public class IrTransmitterFD implements
-		com.deviceyun.yunos.deviceApi.transmitter.IrTransmitterV1_0 {
+		com.driverstack.yunos.deviceApi.transmitter.IrTransmitterV1_0 {
 
 	private DeviceApi deviceApi;
 

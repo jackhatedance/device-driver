@@ -3,9 +3,9 @@ package com._7eggs.arduino.tranmitter;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.deviceyun.yunos.device.AbstractPhysicalDevice;
-import com.deviceyun.yunos.device.utils.HttpClient;
-import com.deviceyun.yunos.device.utils.HttpClientImpl;
+import com.driverstack.yunos.device.AbstractPhysicalDevice;
+import com.driverstack.yunos.device.utils.HttpClient;
+import com.driverstack.yunos.device.utils.HttpClientImpl;
 
 public class IrRfTransmitterPD extends AbstractPhysicalDevice {
 

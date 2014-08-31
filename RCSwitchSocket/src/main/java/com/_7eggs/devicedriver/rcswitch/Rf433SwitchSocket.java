@@ -1,9 +1,9 @@
 package com._7eggs.devicedriver.rcswitch;
 
-import com.deviceyun.yunos.device.AbstractPhysicalDevice;
-import com.deviceyun.yunos.device.DeviceApi;
-import com.deviceyun.yunos.deviceApi._switch.ElectricitySwitch;
-import com.deviceyun.yunos.deviceApi.transmitter.RfTransmitterV1_0;
+import com.driverstack.yunos.device.AbstractPhysicalDevice;
+import com.driverstack.yunos.device.DeviceApi;
+import com.driverstack.yunos.deviceApi._switch.ElectricitySwitch;
+import com.driverstack.yunos.deviceApi.transmitter.RfTransmitterV1_0;
 
 public class Rf433SwitchSocket extends AbstractPhysicalDevice implements
 		ElectricitySwitch {

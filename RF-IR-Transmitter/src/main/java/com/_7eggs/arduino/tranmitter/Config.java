@@ -1,7 +1,7 @@
 package com._7eggs.arduino.tranmitter;
 
-import com.deviceyun.yunos.driver.config.annotation.Configure;
-import com.deviceyun.yunos.driver.config.annotation.Item;
+import com.driverstack.yunos.driver.config.annotation.Configure;
+import com.driverstack.yunos.driver.config.annotation.Item;
 
 @Configure(resourceFile="config/config",supportedlocales = {
 		"en_US", "zh_CN" })

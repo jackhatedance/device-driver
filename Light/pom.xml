@@ -21,12 +21,12 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>com.deviceyun.yunos</groupId>
+			<groupId>com.driverstack.yunos</groupId>
 			<artifactId>driver-api</artifactId>
 			<version>0.1</version>
 		</dependency>
 				<dependency>
-			<groupId>com.deviceyun.yunos</groupId>
+			<groupId>com.driverstack.yunos</groupId>
 			<artifactId>device-api</artifactId>
 			<version>0.1</version>
 		</dependency>
