@@ -8,7 +8,7 @@ import com.driverstack.yunos.driver.AbstractDriver;
 public class ChinaTelecomSTBDriver extends AbstractDriver {
 
 	public ChinaTelecomSTBDriver() {
-		Model m = new Model("Huawei", "Set Top Box", "EC1308");
+		Model m = new Model("Huawei", "EC1308");
 		supportedModels.add(m);
 
 	}

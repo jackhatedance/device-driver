@@ -12,7 +12,7 @@ import com.google.gson.Gson;
 public class IrRfTransmitterDriver extends AbstractDriver {
 
 	public IrRfTransmitterDriver() {
-		Model m = new Model("7eggs", "Multifunction Transmitter", "IR-RF433");
+		Model m = new Model("7eggs", "IR-RF433");
 		supportedModels.add(m);
 
 	}
