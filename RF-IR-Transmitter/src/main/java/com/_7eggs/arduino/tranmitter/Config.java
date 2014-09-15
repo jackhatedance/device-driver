@@ -6,9 +6,9 @@ import com.driverstack.yunos.driver.config.annotation.Item;
 @Configure(resourceFile = "config/config", supportedlocales = { "en_US",
 		"zh_CN" })
 public class Config {
-	@Item(order = 1)
+	@Item(order = 1, defaultValue = "0.0.0.0")
 	private String host;
-	@Item(order = 2)
+	@Item(order = 2, defaultValue = "5880")
 	private int port;
 
 	public String getHost() {
