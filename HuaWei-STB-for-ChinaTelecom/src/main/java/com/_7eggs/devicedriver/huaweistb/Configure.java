@@ -1,6 +1,6 @@
 package com._7eggs.devicedriver.huaweistb;
 
-import com.driverstack.yunos.device.DeviceReference;
+import com.driverstack.yunos.driver.device.DeviceReference;
 
 public class Configure {
 	private int bits;

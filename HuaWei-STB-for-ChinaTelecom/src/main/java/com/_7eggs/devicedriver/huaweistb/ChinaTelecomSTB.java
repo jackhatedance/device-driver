@@ -1,9 +1,8 @@
 package com._7eggs.devicedriver.huaweistb;
 
-import com.driverstack.yunos.device.AbstractPhysicalDevice;
-import com.driverstack.yunos.device.DeviceApi;
 import com.driverstack.yunos.deviceApi.transmitter.IrTransmitterV1_0;
 import com.driverstack.yunos.deviceApi.tv.TV;
+import com.driverstack.yunos.driver.device.AbstractPhysicalDevice;
 
 public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 	private IrTransmitterV1_0 controller;
@@ -26,17 +25,6 @@ public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 	}
 
 	@Override
-	public DeviceApi getApi() {
-
-		return null;
-	}
-
-	@Override
-	public String getApiVersion() {
-		return "1.0";
-	}
-
-	@Override
 	public void on() {
 		transmit(-1);
 
@@ -55,8 +43,8 @@ public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 	}
 
 	private void transmit(long code) {
-		controller.transmit(IrTransmitterV1_0.TYPE_NEC, code, configure.getBits(),
-				configure.getRepeat());
+		controller.transmit(IrTransmitterV1_0.TYPE_NEC, code,
+				configure.getBits(), configure.getRepeat());
 
 	}
 
@@ -77,4 +65,5 @@ public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 		// TODO Auto-generated method stub
 
 	}
+
 }

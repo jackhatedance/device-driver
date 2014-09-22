@@ -2,11 +2,11 @@ package com._7eggs.arduino.tranmitter;
 
 import java.util.List;
 
-import com.driverstack.yunos.device.DeviceInfo;
-import com.driverstack.yunos.device.Model;
-import com.driverstack.yunos.device.PhysicalDevice;
 import com.driverstack.yunos.driver.AbstractDriver;
 import com.driverstack.yunos.driver.config.ConfigurationItem;
+import com.driverstack.yunos.driver.device.DeviceInfo;
+import com.driverstack.yunos.driver.device.Model;
+import com.driverstack.yunos.driver.device.PhysicalDevice;
 import com.google.gson.Gson;
 
 public class IrRfTransmitterDriver extends AbstractDriver {

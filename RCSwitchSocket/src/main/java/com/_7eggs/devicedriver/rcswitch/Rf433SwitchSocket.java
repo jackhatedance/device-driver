@@ -1,9 +1,8 @@
 package com._7eggs.devicedriver.rcswitch;
 
-import com.driverstack.yunos.device.AbstractPhysicalDevice;
-import com.driverstack.yunos.device.DeviceApi;
 import com.driverstack.yunos.deviceApi._switch.ElectricitySwitch;
 import com.driverstack.yunos.deviceApi.transmitter.RfTransmitterV1_0;
+import com.driverstack.yunos.driver.device.AbstractPhysicalDevice;
 
 public class Rf433SwitchSocket extends AbstractPhysicalDevice implements
 		ElectricitySwitch {
@@ -17,31 +16,19 @@ public class Rf433SwitchSocket extends AbstractPhysicalDevice implements
 	@Override
 	public void on() {
 
-		controller.transmit(RfTransmitterV1_0.FREQUENCY_433, pulseLength, codeOn,
-				bits);
+		controller.transmit(RfTransmitterV1_0.FREQUENCY_433, pulseLength,
+				codeOn, bits);
 
 	}
 
 	@Override
 	public void off() {
-		controller.transmit(RfTransmitterV1_0.FREQUENCY_433, pulseLength, codeOff,
-				bits);
+		controller.transmit(RfTransmitterV1_0.FREQUENCY_433, pulseLength,
+				codeOff, bits);
 	}
 
 	public void setController(RfTransmitterV1_0 controller) {
 		this.controller = controller;
-	}
-
-	@Override
-	public DeviceApi getApi() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public String getApiVersion() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
@@ -55,4 +42,5 @@ public class Rf433SwitchSocket extends AbstractPhysicalDevice implements
 		// TODO Auto-generated method stub
 
 	}
+
 }

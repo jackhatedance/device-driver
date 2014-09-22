@@ -1,8 +1,8 @@
 package com._7eggs.arduino.tranmitter;
 
-import com.driverstack.yunos.device.FunctionalDevice;
+import com.driverstack.yunos.driver.device.FunctionalDevice;
 
-public interface MutifunctionTransmitter extends FunctionalDevice {
+public interface MultifunctionTransmitter extends FunctionalDevice {
 
 	void transmitIR(String type, long code, int bits, int repeat);
 

@@ -1,9 +1,8 @@
 package com._7eggs.devicedriver.light;
 
-import com.driverstack.yunos.device.AbstractPhysicalDevice;
-import com.driverstack.yunos.device.DeviceApi;
 import com.driverstack.yunos.deviceApi._switch.ElectricitySwitch;
 import com.driverstack.yunos.deviceApi.light.SimpleLight;
+import com.driverstack.yunos.driver.device.AbstractPhysicalDevice;
 
 public class MyLight extends AbstractPhysicalDevice implements SimpleLight {
 	ElectricitySwitch controller;
@@ -22,18 +21,6 @@ public class MyLight extends AbstractPhysicalDevice implements SimpleLight {
 
 	public void setController(ElectricitySwitch controller) {
 		this.controller = controller;
-	}
-
-	@Override
-	public DeviceApi getApi() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public String getApiVersion() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
