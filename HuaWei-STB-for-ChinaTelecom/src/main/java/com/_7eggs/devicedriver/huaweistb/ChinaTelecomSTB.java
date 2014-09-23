@@ -66,4 +66,5 @@ public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 
 	}
 
+
 }

@@ -43,4 +43,5 @@ public class Rf433SwitchSocket extends AbstractPhysicalDevice implements
 
 	}
 
+	 
 }

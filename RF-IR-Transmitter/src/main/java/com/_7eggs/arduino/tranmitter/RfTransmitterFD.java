@@ -6,6 +6,7 @@ public class RfTransmitterFD implements RfTransmitterV1_0 {
 
 	private IrRfTransmitterPD pdo;
 
+ 
 	public RfTransmitterFD(IrRfTransmitterPD pdo) {
 		this.pdo = pdo;
 

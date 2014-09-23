@@ -30,6 +30,8 @@
 		<module>HuaWei-STB-for-ChinaTelecom</module>
 		<module>Light</module>
 		<module>RCSwitchSocket</module>
-		
+
+		<module>Generic-IrTransmitterInterface</module>
+		<module>Generic-RfTransmitterInterface</module>
 	</modules>
 </project>

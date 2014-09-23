@@ -35,4 +35,6 @@ public class MyLight extends AbstractPhysicalDevice implements SimpleLight {
 
 	}
 
+	
+
 }

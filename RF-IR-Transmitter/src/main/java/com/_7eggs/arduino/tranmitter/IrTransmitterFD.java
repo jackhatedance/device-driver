@@ -5,6 +5,8 @@ public class IrTransmitterFD implements
 
 	private IrRfTransmitterPD pdo;
 
+
+
 	public IrTransmitterFD(IrRfTransmitterPD pdo) {
 		this.pdo = pdo;
 
