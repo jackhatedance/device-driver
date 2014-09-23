@@ -36,6 +36,16 @@
 			<version>0.1</version>
 		</dependency>
 		<dependency>
+			<groupId>com.driverstack.functionalDevice.generic</groupId>
+			<artifactId>IrTransmitterInterface</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.driverstack.functionalDevice.generic</groupId>
+			<artifactId>RfTransmitterInterface</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
 			<groupId>com.7eggs</groupId>
 			<artifactId>MultifunctionTransmitterAPI</artifactId>
 			<version>1.0</version>

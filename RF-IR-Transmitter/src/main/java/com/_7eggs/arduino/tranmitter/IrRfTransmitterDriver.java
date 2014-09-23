@@ -1,9 +1,6 @@
 package com._7eggs.arduino.tranmitter;
 
-import java.util.List;
-
 import com.driverstack.yunos.driver.AbstractDriver;
-import com.driverstack.yunos.driver.config.ConfigurationItem;
 import com.driverstack.yunos.driver.device.DeviceInfo;
 import com.driverstack.yunos.driver.device.Model;
 import com.driverstack.yunos.driver.device.PhysicalDevice;
