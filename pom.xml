@@ -29,7 +29,7 @@
 		<module>RF-IR-Transmitter</module>
 		<module>HuaWei-STB-for-ChinaTelecom</module>
 		<module>Light</module>
-		<module>RCSwitchSocket</module>
+		<module>RCSwitchSocketDriver</module>
 
 		<module>Generic-ExampleInterface</module>
 		<module>Generic-IrTransmitterInterface</module>
