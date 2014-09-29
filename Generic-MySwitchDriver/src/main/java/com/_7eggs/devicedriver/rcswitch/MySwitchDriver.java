@@ -1,4 +1,4 @@
-package com._7eggs.arduino.tranmitter;
+package com._7eggs.devicedriver.rcswitch;
 
 import com.driverstack.yunos.driver.AbstractDriver;
 import com.driverstack.yunos.driver.device.DeviceInfo;
@@ -6,25 +6,21 @@ import com.driverstack.yunos.driver.device.Model;
 import com.driverstack.yunos.driver.device.PhysicalDevice;
 import com.google.gson.Gson;
 
-public class IrRfTransmitterDriver extends AbstractDriver {
+public class MySwitchDriver extends AbstractDriver {
 
-	public IrRfTransmitterDriver() {
-		Model m = new Model("7eggs", "IR-RF433");
-		supportedModels.add(m);
+	public MySwitchDriver() {
 
 	}
 
 	@Override
 	public PhysicalDevice createDevice(DeviceInfo info) {
-		IrRfTransmitterPD dev = new IrRfTransmitterPD();
+		MySwitchPD dev = new MySwitchPD();
 
 		Gson gson = new Gson();
 		Config conf = gson.fromJson(info.getConfigure().toString(),
 				Config.class);
 
 		dev.setConfigure(conf);
-
-		System.out.println("host:" + conf.getHost());
 
 		dev.init();
 
@@ -34,23 +30,23 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 	@Override
 	public String getOrganizationId() {
 
-		return "7eggs.com";
+		return null;
 	}
 
 	@Override
-	public Class getConfigureClass() {		
+	public Class getConfigureClass() {
 		return Config.class;
 	}
-	
-	@Override
-	public String getDriverId() {
 
-		return "arduino rf&ir tranmitter driver";
+	@Override
+	public String getArtifactId() {
+
+		return null;
 	}
 
 	@Override
 	public String getVersion() {
 
-		return "0.1";
+		return null;
 	}
 }

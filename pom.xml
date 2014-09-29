@@ -24,14 +24,16 @@
 
 
 	<modules>
+	    <module>Generic-MySwitchInterface</module>
+	    <module>Generic-MySwitchDriver</module>
 	    
 	    <module>Multifunction Transmitter Interface</module>	    
-		<module>RF-IR-Transmitter</module>
+		<module>IR-RF-Transmitter</module>
 		<module>HuaWei-STB-for-ChinaTelecom</module>
 		<module>Light</module>
 		<module>RCSwitchSocketDriver</module>
 
-		<module>Generic-ExampleInterface</module>
+		
 		<module>Generic-IrTransmitterInterface</module>
 		<module>Generic-RfTransmitterInterface</module>
 	</modules>

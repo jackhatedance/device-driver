@@ -6,18 +6,21 @@ import com.driverstack.yunos.driver.device.AbstractPhysicalDevice;
 
 public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 	private IrTransmitterV1_0 controller;
-	private Configure configure;
 
 	private static long CODE_CHANNEL[] = { 0x12345, 0x123456 };
 
 	public ChinaTelecomSTB() {
+		/*
+		 * configure = new Configure();
+		 * 
+		 * configure.setBits(24); configure.setRepeat(1);
+		 * configure.getControllerRef().setType(
+		 * "com.driverstack.yunos.api.device.transmitter.IrTransmitter");
+		 */
+	}
 
-		configure = new Configure();
-
-		configure.setBits(24);
-		configure.setRepeat(1);
-		configure.getControllerRef().setType(
-				"com.driverstack.yunos.api.device.transmitter.IrTransmitter");
+	private Config getConfig() {
+		return (Config) config;
 	}
 
 	public void setController(IrTransmitterV1_0 controller) {
@@ -43,8 +46,8 @@ public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 	}
 
 	private void transmit(long code) {
-		controller.transmit(IrTransmitterV1_0.TYPE_NEC, code,
-				configure.getBits(), configure.getRepeat());
+		controller.transmit(IrTransmitterV1_0.TYPE_NEC, code, getConfig()
+				.getBits(), getConfig().getRepeat());
 
 	}
 
@@ -53,18 +56,5 @@ public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 		transmit(CODE_CHANNEL[channel]);
 
 	}
-
-	@Override
-	public Object getConfigure() {
-
-		return configure;
-	}
-
-	@Override
-	public void setConfigure(Object arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
 
 }

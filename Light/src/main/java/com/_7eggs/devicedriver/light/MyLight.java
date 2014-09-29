@@ -23,18 +23,4 @@ public class MyLight extends AbstractPhysicalDevice implements SimpleLight {
 		this.controller = controller;
 	}
 
-	@Override
-	public Object getConfigure() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void setConfigure(Object arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	
-
 }

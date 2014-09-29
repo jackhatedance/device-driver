@@ -2,7 +2,7 @@ package com._7eggs.devicedriver.huaweistb;
 
 import com.driverstack.yunos.driver.device.DeviceReference;
 
-public class Configure {
+public class Config {
 	private int bits;
 	private int repeat;
 	private DeviceReference controllerRef = new DeviceReference();

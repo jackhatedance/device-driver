@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.7eggs</groupId>
-	<artifactId>RF-IR-Transmitter-Driver</artifactId>
+	<artifactId>MySwitchDriver</artifactId>
 	<version>1.0</version>
-	<name>RF-IR-Transmitter</name>
+	<name>MySwitchDriver</name>
 
 	<build>
 
@@ -21,11 +21,6 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.2.4</version>
-		</dependency>
-		<dependency>
 			<groupId>com.driverstack.yunos</groupId>
 			<artifactId>driver-api</artifactId>
 			<version>0.1</version>
@@ -37,17 +32,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.driverstack.functionalDevice.generic</groupId>
-			<artifactId>IrTransmitterInterface</artifactId>
-			<version>1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.driverstack.functionalDevice.generic</groupId>
-			<artifactId>RfTransmitterInterface</artifactId>
-			<version>1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.7eggs</groupId>
-			<artifactId>MultifunctionTransmitterAPI</artifactId>
+			<artifactId>MySwitchInterface</artifactId>
 			<version>1.0</version>
 		</dependency>
 	</dependencies>

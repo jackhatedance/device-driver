@@ -26,7 +26,7 @@ public class ChinaTelecomSTBDriver extends AbstractDriver {
 	}
 
 	@Override
-	public String getDriverId() {
+	public String getArtifactId() {
 
 		return "Huawei-STB-EC1308";
 	}
