@@ -1,4 +1,4 @@
-package com._7eggs.devicedriver.rcswitch;
+package com._7eggs.devicedriver.myswitch;
 
 import com.driverstack.yunos.deviceApi.transmitter.MySwitch;
 import com.driverstack.yunos.driver.device.AbstractPhysicalDevice;

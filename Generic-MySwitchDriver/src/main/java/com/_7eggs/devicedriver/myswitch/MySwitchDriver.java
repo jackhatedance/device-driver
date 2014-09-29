@@ -1,4 +1,4 @@
-package com._7eggs.devicedriver.rcswitch;
+package com._7eggs.devicedriver.myswitch;
 
 import com.driverstack.yunos.driver.AbstractDriver;
 import com.driverstack.yunos.driver.device.DeviceInfo;
