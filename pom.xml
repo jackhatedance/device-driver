@@ -33,7 +33,7 @@
 		<module>Light</module>
 		<module>RCSwitchSocketDriver</module>
 
-		
+		<module>Generic-ElectricitySwitchInterface</module>
 		<module>Generic-IrTransmitterInterface</module>
 		<module>Generic-RfTransmitterInterface</module>
 	</modules>
