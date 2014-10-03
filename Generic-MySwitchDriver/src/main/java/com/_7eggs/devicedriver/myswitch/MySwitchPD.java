@@ -13,16 +13,15 @@ public class MySwitchPD extends AbstractPhysicalDevice {
 	}
 
 	@Override
-	public Config getConfigure() {
-		return config;
+	public void init(Object config) {
+
+		super.init(config);
+
+		this.config = (Config) config;
+		createFD();
 	}
 
-	public void setConfigure(Object configure) {
-		this.config = (Config) configure;
-
-	}
-
-	public void init() {
+	public void createFD() {
 
 		FunctionalDevice fd = new MySwitch() {
 

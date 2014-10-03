@@ -4,7 +4,6 @@ import com.driverstack.yunos.driver.AbstractDriver;
 import com.driverstack.yunos.driver.device.DeviceInfo;
 import com.driverstack.yunos.driver.device.Model;
 import com.driverstack.yunos.driver.device.PhysicalDevice;
-import com.google.gson.Gson;
 
 public class IrRfTransmitterDriver extends AbstractDriver {
 
@@ -18,15 +17,7 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 	public PhysicalDevice createDevice(DeviceInfo info) {
 		IrRfTransmitterPD dev = new IrRfTransmitterPD();
 
-		Gson gson = new Gson();
-		Config conf = gson.fromJson(info.getConfigure().toString(),
-				Config.class);
-
-		dev.setConfigure(conf);
-
-		System.out.println("host:" + conf.getHost());
-
-		dev.init();
+		dev.init(info.getConfigure());
 
 		return dev;
 	}
@@ -38,10 +29,10 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 	}
 
 	@Override
-	public Class getConfigureClass() {		
+	public Class getConfigureClass() {
 		return Config.class;
 	}
-	
+
 	@Override
 	public String getArtifactId() {
 

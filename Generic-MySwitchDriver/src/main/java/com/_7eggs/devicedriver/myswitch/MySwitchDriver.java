@@ -2,9 +2,7 @@ package com._7eggs.devicedriver.myswitch;
 
 import com.driverstack.yunos.driver.AbstractDriver;
 import com.driverstack.yunos.driver.device.DeviceInfo;
-import com.driverstack.yunos.driver.device.Model;
 import com.driverstack.yunos.driver.device.PhysicalDevice;
-import com.google.gson.Gson;
 
 public class MySwitchDriver extends AbstractDriver {
 
@@ -16,13 +14,7 @@ public class MySwitchDriver extends AbstractDriver {
 	public PhysicalDevice createDevice(DeviceInfo info) {
 		MySwitchPD dev = new MySwitchPD();
 
-		Gson gson = new Gson();
-		Config conf = gson.fromJson(info.getConfigure().toString(),
-				Config.class);
-
-		dev.setConfigure(conf);
-
-		dev.init();
+		dev.init(info.getConfigure());
 
 		return dev;
 	}

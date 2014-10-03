@@ -10,27 +10,24 @@ import com.driverstack.yunos.driver.device.utils.HttpClientImpl;
 public class IrRfTransmitterPD extends AbstractPhysicalDevice {
 
 	private HttpClient httpClient;
-	private Config configure;
+	private Config config;
 
 	public IrRfTransmitterPD() {
-		// deviceApi = new DeviceApi("7eggs", "Transmitter",
-		// "MultifunctionTransmitter");
-		// version = "0.1";
 
 	}
 
 	@Override
-	public Object getConfigure() {
-		return configure;
+	public void init(Object config) {
+
+		super.init(config);
+
+		this.config = (Config) config;
+
+		createFD();
 	}
 
-	public void setConfigure(Object configure) {
-		this.configure = (Config) configure;
-	}
-
-	public void init() {
-		httpClient = new HttpClientImpl(configure.getHost(),
-				configure.getPort());
+	public void createFD() {
+		httpClient = new HttpClientImpl(config.getHost(), config.getPort());
 
 		IrTransmitterFD it = new IrTransmitterFD(this);
 		functionalDevices.add(it);
