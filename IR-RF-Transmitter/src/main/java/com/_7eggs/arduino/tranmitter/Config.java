@@ -6,25 +6,15 @@ import com.driverstack.yunos.driver.config.annotation.Item;
 @Configure(resourceFile = "config/config", supportedlocales = { "en_US",
 		"zh_CN" })
 public class Config {
-	@Item(order = 1, defaultValue = "0.0.0.0")
-	private String host;
-	@Item(order = 2, defaultValue = "5880")
-	private int port;
+	@Item(order = 1, defaultValue = "http://www.example.com/")
+	private String url;
 
-	public String getHost() {
-		return host;
+	public String getUrl() {
+		return url;
 	}
 
-	public void setHost(String host) {
-		this.host = host;
-	}
-
-	public int getPort() {
-		return port;
-	}
-
-	public void setPort(int port) {
-		this.port = port;
+	public void setUrl(String url) {
+		this.url = url;
 	}
 
 }

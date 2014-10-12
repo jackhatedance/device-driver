@@ -1,5 +1,6 @@
 package com._7eggs.arduino.tranmitter;
 
+import com.driverstack.yunos.ExecutionEnvironment;
 import com.driverstack.yunos.driver.AbstractDriver;
 import com.driverstack.yunos.driver.device.DeviceInfo;
 import com.driverstack.yunos.driver.device.Model;
@@ -14,10 +15,11 @@ public class IrRfTransmitterDriver extends AbstractDriver {
 	}
 
 	@Override
-	public PhysicalDevice createDevice(DeviceInfo info) {
+	public PhysicalDevice createDevice(
+			ExecutionEnvironment executionEnvironment, DeviceInfo info) {
 		IrRfTransmitterPD dev = new IrRfTransmitterPD();
 
-		dev.init(info.getConfigure());
+		dev.init(executionEnvironment, info.getConfigure());
 
 		return dev;
 	}
