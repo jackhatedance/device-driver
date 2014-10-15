@@ -1,5 +1,6 @@
 package com._7eggs.devicedriver.myswitch;
 
+import com.driverstack.yunos.ExecutionEnvironment;
 import com.driverstack.yunos.driver.AbstractDriver;
 import com.driverstack.yunos.driver.device.DeviceInfo;
 import com.driverstack.yunos.driver.device.PhysicalDevice;
@@ -11,10 +12,11 @@ public class MySwitchDriver extends AbstractDriver {
 	}
 
 	@Override
-	public PhysicalDevice createDevice(DeviceInfo info) {
+	public PhysicalDevice createDevice(
+			ExecutionEnvironment executionEnvironment, DeviceInfo info) {
 		MySwitchPD dev = new MySwitchPD();
 
-		dev.init(info.getConfigure());
+		dev.init(executionEnvironment, info.getConfigure());
 
 		return dev;
 	}

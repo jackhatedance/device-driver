@@ -1,5 +1,6 @@
 package com._7eggs.devicedriver.huaweistb;
 
+import com.driverstack.yunos.ExecutionEnvironment;
 import com.driverstack.yunos.driver.AbstractDriver;
 import com.driverstack.yunos.driver.device.DeviceInfo;
 import com.driverstack.yunos.driver.device.Model;
@@ -14,7 +15,7 @@ public class ChinaTelecomSTBDriver extends AbstractDriver {
 	}
 
 	@Override
-	public PhysicalDevice createDevice(DeviceInfo info) {
+	public PhysicalDevice createDevice(ExecutionEnvironment executionEnvironment,DeviceInfo info) {
 		ChinaTelecomSTB dev = new ChinaTelecomSTB();
 		return dev;
 	}
