@@ -12,10 +12,11 @@ public class Driver extends AbstractDriver {
 	}
 
 	@Override
-	public PhysicalDevice createDevice(ExecutionEnvironment executionEnvironment, DeviceInfo info) {
+	public PhysicalDevice createDevice(
+			ExecutionEnvironment executionEnvironment, DeviceInfo info) {
 		PD dev = new PD();
 
-		dev.init(executionEnvironment,info.getConfigure());
+		dev.init(executionEnvironment, info.getConfigure());
 
 		return dev;
 	}

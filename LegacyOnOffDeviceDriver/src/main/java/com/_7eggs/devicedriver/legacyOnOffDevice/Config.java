@@ -11,12 +11,34 @@ public class Config {
 	@Item(order = 1, defaultValue = "")
 	private ElectricitySwitch controller;
 
+	@Item(order = 2, defaultValue = "")
+	private String scheduleOnAt;
+
+	@Item(order = 3, defaultValue = "")
+	private String scheduleOffAt;
+
 	public ElectricitySwitch getController() {
 		return controller;
 	}
 
 	public void setController(ElectricitySwitch controller) {
 		this.controller = controller;
+	}
+
+	public String getScheduleOnAt() {
+		return scheduleOnAt;
+	}
+
+	public void setScheduleOnAt(String scheduleOnAt) {
+		this.scheduleOnAt = scheduleOnAt;
+	}
+
+	public String getScheduleOffAt() {
+		return scheduleOffAt;
+	}
+
+	public void setScheduleOffAt(String scheduleOffAt) {
+		this.scheduleOffAt = scheduleOffAt;
 	}
 
 }
