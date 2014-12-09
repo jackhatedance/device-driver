@@ -35,7 +35,10 @@
 		<module>LegacyOnOffDeviceDriver</module>
 
 		<module>Generic-LegacyOnOffDeviceInterface</module>
+		
 		<module>Generic-ElectricitySwitchInterface</module>
+		<module>Generic-StatefulElectricitySwitchInterface</module>
+		
 		<module>Generic-IrTransmitterInterface</module>
 		<module>Generic-RfTransmitterInterface</module>
 	</modules>
