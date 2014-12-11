@@ -3,7 +3,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.7eggs</groupId>
 	<artifactId>RCSwitchDriver</artifactId>
-	<version>1.0</version>
 	<name>RCSwitchDriver</name>
 
 	<build>
@@ -35,9 +34,10 @@
 			<version>1.0</version>
 		</dependency>
 		<dependency>
-			<groupId>com.driverstack.functionalDevice.generic</groupId>
-			<artifactId>ElectricitySwitchInterface</artifactId>
+			<groupId>com.driverstack.deviceInterface</groupId>
+			<artifactId>GenericStatefulElectricitySwitch</artifactId>
 			<version>1.0</version>
 		</dependency>
 	</dependencies>
+	<version>2.0</version>
 </project>
