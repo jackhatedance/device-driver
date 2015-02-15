@@ -5,7 +5,11 @@
 	<artifactId>LegacyOnOffDeviceInterface</artifactId>
 	<version>1.0</version>
 	<name>LegacyOnOffDeviceInterface</name>
-
+<parent>
+		<groupId>com.7eggs</groupId>
+		<artifactId>drivers</artifactId>
+		<version>1.0</version>
+	</parent>
 	<build>
 
 		<plugins>
@@ -22,8 +26,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.driverstack.yunos</groupId>
-			<artifactId>device-api</artifactId>
-			<version>0.1</version>
+			<artifactId>driverstack-yunos-device-api</artifactId>
+			<version>${yunos.version}</version>
 		</dependency>
 	</dependencies>
 </project>
