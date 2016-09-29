@@ -1,7 +1,9 @@
 package com._7eggs.arduino.tranmitter;
 
+import net.abstractfactory.yunos.deviceApi.transmitter.IrTransmitterV1_0;
+
 public class IrTransmitterFD implements
-		com.driverstack.yunos.deviceApi.transmitter.IrTransmitterV1_0 {
+		IrTransmitterV1_0 {
 
 	private IrRfTransmitterPD pdo;
 

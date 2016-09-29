@@ -1,6 +1,6 @@
 package net.abstractfactory.yunos.deviceApi.transmitter;
 
-import com.driverstack.yunos.driver.device.FunctionalDevice;
+import net.abstractfactory.yunos.driver.device.FunctionalDevice;
 
 public interface IrTransmitterV1_0 extends FunctionalDevice {
 

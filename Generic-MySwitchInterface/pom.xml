@@ -4,7 +4,7 @@
 	<groupId>net.abstractfactory.functionalDevice.generic</groupId>
 	<artifactId>MySwitchInterface</artifactId>
 	<version>1.0</version>
-	<name>MySwitchInterface</name>
+	<name>7eggs-my-switch-interface</name>
 <parent>
 		<groupId>com.7eggs</groupId>
 		<artifactId>drivers</artifactId>

@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.7eggs</groupId>
 	<artifactId>RCSwitchDriver</artifactId>
-	<name>RCSwitchDriver</name>
+	<name>7eggs-RCSwitchDriver</name>
 	<parent>
 		<groupId>com.7eggs</groupId>
 		<artifactId>drivers</artifactId>

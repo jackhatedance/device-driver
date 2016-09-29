@@ -4,7 +4,7 @@
 	<groupId>com.7eggs</groupId>
 	<artifactId>MySwitchDriver</artifactId>
 	<version>1.0</version>
-	<name>MySwitchDriver</name>
+	<name>7eggs-my-switch-driver</name>
 <parent>
 		<groupId>com.7eggs</groupId>
 		<artifactId>drivers</artifactId>

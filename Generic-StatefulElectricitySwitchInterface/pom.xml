@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.driverstack.deviceInterface</groupId>
+	<groupId>net.abstractfactory.deviceInterface</groupId>
 	<artifactId>GenericStatefulElectricitySwitch</artifactId>
 	<version>1.0</version>
-	<name>GenericStatefulElectricitySwitch</name>
+	<name>7eggs-generic-stateful-electricity-switch</name>
 <parent>
 		<groupId>com.7eggs</groupId>
 		<artifactId>drivers</artifactId>
@@ -25,12 +25,12 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>com.driverstack.yunos</groupId>
-			<artifactId>driverstack-yunos-device-api</artifactId>
+			<groupId>net.abstractfactory.yunos</groupId>
+			<artifactId>abstractfactory-yunos-device-api</artifactId>
 			<version>${yunos.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.driverstack.functionalDevice.generic</groupId>
+			<groupId>net.abstractfactory.functionalDevice.generic</groupId>
 			<artifactId>ElectricitySwitchInterface</artifactId>
 			<version>1.0</version>
 		</dependency>

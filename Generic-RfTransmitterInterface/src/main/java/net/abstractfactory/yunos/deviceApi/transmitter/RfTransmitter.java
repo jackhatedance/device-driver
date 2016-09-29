@@ -1,6 +1,6 @@
 package net.abstractfactory.yunos.deviceApi.transmitter;
 
-import com.driverstack.yunos.driver.device.FunctionalDevice;
+import net.abstractfactory.yunos.driver.device.FunctionalDevice;
 
 public interface RfTransmitter extends FunctionalDevice {
 	static final String ORGANIZATION_ID = "Generic";

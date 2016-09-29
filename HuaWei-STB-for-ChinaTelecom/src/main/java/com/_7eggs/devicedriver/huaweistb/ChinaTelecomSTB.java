@@ -1,8 +1,8 @@
 package com._7eggs.devicedriver.huaweistb;
 
-import com.driverstack.yunos.deviceApi.transmitter.IrTransmitterV1_0;
-import com.driverstack.yunos.deviceApi.tv.TV;
-import com.driverstack.yunos.driver.device.AbstractPhysicalDevice;
+import net.abstractfactory.yunos.deviceApi.transmitter.IrTransmitterV1_0;
+import net.abstractfactory.yunos.deviceApi.tv.TV;
+import net.abstractfactory.yunos.driver.device.AbstractPhysicalDevice;
 
 public class ChinaTelecomSTB extends AbstractPhysicalDevice implements TV {
 	private IrTransmitterV1_0 controller;
