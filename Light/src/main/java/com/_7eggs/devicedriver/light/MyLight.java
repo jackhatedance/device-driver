@@ -2,7 +2,7 @@ package com._7eggs.devicedriver.light;
 
 
 
-import net.abstractfactory.yunos.deviceApi._switch.ElectricitySwitch;
+import net.abstractfactory.yunos.device.api.generic.switch_.ElectricitySwitch;
 import net.abstractfactory.yunos.deviceApi.light.SimpleLight;
 import net.abstractfactory.yunos.driver.device.AbstractPhysicalDevice;
 

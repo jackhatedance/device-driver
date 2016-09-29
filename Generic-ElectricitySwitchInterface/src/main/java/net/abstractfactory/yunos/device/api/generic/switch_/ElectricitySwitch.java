@@ -1,4 +1,4 @@
-package net.abstractfactory.yunos.deviceApi._switch;
+package net.abstractfactory.yunos.device.api.generic.switch_;
 
 import net.abstractfactory.yunos.driver.device.FunctionalDevice;
 
