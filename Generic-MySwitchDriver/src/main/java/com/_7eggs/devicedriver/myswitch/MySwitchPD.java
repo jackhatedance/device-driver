@@ -1,10 +1,11 @@
 package com._7eggs.devicedriver.myswitch;
 
-import com.driverstack.yunos.ExecutionEnvironment;
-import com.driverstack.yunos.deviceApi.transmitter.MySwitch;
-import com.driverstack.yunos.driver.device.AbstractPhysicalDevice;
-import com.driverstack.yunos.driver.device.FunctionalDevice;
-import com.driverstack.yunos.driver.device.TimerListener;
+
+import net.abstractfactory.yunos.ExecutionEnvironment;
+import net.abstractfactory.yunos.deviceApi.transmitter.MySwitch;
+import net.abstractfactory.yunos.driver.device.AbstractPhysicalDevice;
+import net.abstractfactory.yunos.driver.device.FunctionalDevice;
+import net.abstractfactory.yunos.driver.device.TimerListener;
 
 public class MySwitchPD extends AbstractPhysicalDevice implements TimerListener {
 

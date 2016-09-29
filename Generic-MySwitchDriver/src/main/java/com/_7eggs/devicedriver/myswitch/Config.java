@@ -1,8 +1,8 @@
 package com._7eggs.devicedriver.myswitch;
 
-import com.driverstack.yunos.deviceApi.transmitter.MySwitch;
-import com.driverstack.yunos.driver.config.annotation.Configure;
-import com.driverstack.yunos.driver.config.annotation.Item;
+import net.abstractfactory.yunos.deviceApi.transmitter.MySwitch;
+import net.abstractfactory.yunos.driver.config.annotation.Configure;
+import net.abstractfactory.yunos.driver.config.annotation.Item;
 
 @Configure(resourceFile = "config/config", supportedlocales = { "en_US",
 		"zh_CN" })

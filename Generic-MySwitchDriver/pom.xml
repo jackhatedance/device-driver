@@ -25,17 +25,17 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>com.driverstack.yunos</groupId>
-			<artifactId>driverstack-yunos-driver-api</artifactId>
+			<groupId>net.abstractfactory.yunos</groupId>
+			<artifactId>abstractfactory-yunos-driver-api</artifactId>
 			<version>${yunos.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.driverstack.yunos</groupId>
-			<artifactId>driverstack-yunos-device-api</artifactId>
+			<groupId>net.abstractfactory.yunos</groupId>
+			<artifactId>abstractfactory-yunos-device-api</artifactId>
 			<version>${yunos.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.driverstack.functionalDevice.generic</groupId>
+			<groupId>net.abstractfactory.functionalDevice.generic</groupId>
 			<artifactId>MySwitchInterface</artifactId>
 			<version>1.0</version>
 		</dependency>

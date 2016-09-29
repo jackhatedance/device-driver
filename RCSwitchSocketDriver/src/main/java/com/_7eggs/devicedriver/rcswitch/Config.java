@@ -1,8 +1,9 @@
 package com._7eggs.devicedriver.rcswitch;
 
-import com.driverstack.yunos.deviceApi.transmitter.RfTransmitter;
 import com.driverstack.yunos.driver.config.annotation.Configure;
 import com.driverstack.yunos.driver.config.annotation.Item;
+
+import net.abstractfactory.yunos.deviceApi.transmitter.RfTransmitter;
 
 @Configure(resourceFile = "config/config", supportedlocales = { "en_US",
 		"zh_CN" })

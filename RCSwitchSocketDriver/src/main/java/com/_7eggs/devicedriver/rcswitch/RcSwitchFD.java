@@ -1,8 +1,7 @@
 package com._7eggs.devicedriver.rcswitch;
 
-import com.driverstack._interface._switch.StatefulElectricitySwitch;
-import com.driverstack.yunos.deviceApi._switch.ElectricitySwitch;
-import com.driverstack.yunos.deviceApi.transmitter.RfTransmitter;
+import net.abstractfactory._interface._switch.StatefulElectricitySwitch;
+import net.abstractfactory.yunos.deviceApi.transmitter.RfTransmitter;
 
 public class RcSwitchFD implements StatefulElectricitySwitch {
 	private Config config;
@@ -17,7 +16,7 @@ public class RcSwitchFD implements StatefulElectricitySwitch {
 	}
 
 	@Override
-	public void on() {
+	public void on() {O
 
 		controller.transmit(RfTransmitter.FREQUENCY_433,
 				config.getPulseLength(), config.getCodeOn(), config.getBits());
