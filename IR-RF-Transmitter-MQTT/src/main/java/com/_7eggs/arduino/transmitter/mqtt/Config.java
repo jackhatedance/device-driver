@@ -1,7 +1,7 @@
 package com._7eggs.arduino.transmitter.mqtt;
 
-import com.driverstack.yunos.driver.config.annotation.Configure;
-import com.driverstack.yunos.driver.config.annotation.Item;
+import net.abstractfactory.yunos.driver.config.annotation.Configure;
+import net.abstractfactory.yunos.driver.config.annotation.Item;
 
 @Configure(resourceFile = "config/config", supportedlocales = { "en_US",
 		"zh_CN" })

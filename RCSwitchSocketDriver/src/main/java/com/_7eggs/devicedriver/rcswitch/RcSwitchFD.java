@@ -16,7 +16,7 @@ public class RcSwitchFD implements StatefulElectricitySwitch {
 	}
 
 	@Override
-	public void on() {O
+	public void on() {
 
 		controller.transmit(RfTransmitter.FREQUENCY_433,
 				config.getPulseLength(), config.getCodeOn(), config.getBits());

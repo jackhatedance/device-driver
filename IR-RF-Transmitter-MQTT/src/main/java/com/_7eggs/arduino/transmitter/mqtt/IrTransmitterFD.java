@@ -1,7 +1,8 @@
 package com._7eggs.arduino.transmitter.mqtt;
 
-public class IrTransmitterFD implements
-		com.driverstack.yunos.deviceApi.transmitter.IrTransmitterV1_0 {
+import net.abstractfactory.yunos.deviceApi.transmitter.IrTransmitterV1_0;
+
+public class IrTransmitterFD implements IrTransmitterV1_0 {
 
 	private IrRfTransmitterPD pdo;
  

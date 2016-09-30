@@ -1,8 +1,8 @@
 package com._7eggs.devicedriver.legacyOnOffDevice;
 
-import com.driverstack.yunos.ExecutionEnvironment;
-import com.driverstack.yunos.driver.device.AbstractPhysicalDevice;
-import com.driverstack.yunos.driver.device.TimerListener;
+import net.abstractfactory.yunos.ExecutionEnvironment;
+import net.abstractfactory.yunos.driver.device.AbstractPhysicalDevice;
+import net.abstractfactory.yunos.driver.device.TimerListener;
 
 public class PD extends AbstractPhysicalDevice implements TimerListener {
 

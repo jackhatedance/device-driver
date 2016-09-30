@@ -1,6 +1,6 @@
 package com._7eggs.arduino.tranmitter;
 
-import com.driverstack.yunos.driver.device.FunctionalDevice;
+import net.abstractfactory.yunos.driver.device.FunctionalDevice;
 
 public interface MultifunctionTransmitter extends FunctionalDevice {
 

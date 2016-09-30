@@ -1,7 +1,7 @@
 package com._7eggs.devicedriver.legacyOnOffDevice;
 
-import com.driverstack.yunos.deviceApi._switch.ElectricitySwitch;
-import com.driverstack.yunos.deviceApi._switch.LegacyOnOffDevice;
+import net.abstractfactory.yunos.device.api.generic.switch_.ElectricitySwitch;
+import net.abstractfactory.yunos.deviceApi._switch.LegacyOnOffDevice;
 
 public class FD implements LegacyOnOffDevice {
 	private Config config;

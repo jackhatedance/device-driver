@@ -1,9 +1,9 @@
 package com._7eggs.devicedriver.rcswitch;
 
-import com.driverstack.yunos.ExecutionEnvironment;
-import com.driverstack.yunos.driver.AbstractDriver;
-import com.driverstack.yunos.driver.device.DeviceInfo;
-import com.driverstack.yunos.driver.device.PhysicalDevice;
+import net.abstractfactory.yunos.ExecutionEnvironment;
+import net.abstractfactory.yunos.driver.AbstractDriver;
+import net.abstractfactory.yunos.driver.device.DeviceInfo;
+import net.abstractfactory.yunos.driver.device.PhysicalDevice;
 
 public class RcSwitchDriver extends AbstractDriver {
 

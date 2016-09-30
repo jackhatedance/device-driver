@@ -3,9 +3,9 @@ package com._7eggs.arduino.transmitter.mqtt;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.driverstack.yunos.ExecutionEnvironment;
-import com.driverstack.yunos.driver.device.AbstractPhysicalDevice;
-import com.driverstack.yunos.driver.device.DeviceInfo;
+import net.abstractfactory.yunos.ExecutionEnvironment;
+import net.abstractfactory.yunos.driver.device.AbstractPhysicalDevice;
+import net.abstractfactory.yunos.driver.device.DeviceInfo;
 
 public class IrRfTransmitterPD extends AbstractPhysicalDevice {
 
